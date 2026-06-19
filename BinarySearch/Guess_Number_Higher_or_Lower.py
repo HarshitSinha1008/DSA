@@ -5,6 +5,16 @@
 #          otherwise return 0
 # def guess(num):
 
+pick = 6
+
+def guess(num):
+    if num > pick:
+        return -1
+    elif num < pick:
+        return 1
+    else:
+        return 0
+    
 class Solution(object):
     def guessNumber(self, n):
         """
@@ -23,3 +33,5 @@ class Solution(object):
                 right = mid - 1
             elif guess(mid) == 1:
                 left = mid + 1
+                
+print(Solution().guessNumber(10))
