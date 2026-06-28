@@ -1,9 +1,5 @@
 class Solution(object):
     def maxDepth(self, root):
-        """
-        :type root: Optional[TreeNode]
-        :rtype: int
-        """
 
         if root is None:
             return 0
